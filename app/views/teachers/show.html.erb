@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Control number:</b>
+  <%= @teacher.control_number %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @teacher.name %>
+</p>
+
+<p>
+  <b>Paternal surname:</b>
+  <%= @teacher.paternal_surname %>
+</p>
+
+<p>
+  <b>Maternal surname:</b>
+  <%= @teacher.maternal_surname %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @teacher.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_teacher_path(@teacher) %> |
+<%= link_to 'Back', user_teacher_path %>
