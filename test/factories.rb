@@ -3,6 +3,15 @@ Factory.define :user do |u|
   u.sequence( :email )    { |n| "teacher#{n}@school.com" }
   u.password  'supersecret'
   u.confirmed_at Time.now
+  
+  Factory.define :teacher do |t|
+  t.control_number '123'
+  t.name 'Adriana'
+  t.paternal_surname 'Cardenas'
+  t.maternal_surname 'Martinez'
+  t.association :user
+   
+   end
 end
 
 Factory.define :campus do |c|

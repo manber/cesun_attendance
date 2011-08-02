@@ -8,6 +8,7 @@ CesunAttendance::Application.routes.draw do
   resources :users, :only => [ :index, :edit, :update, :destroy ] do
     collection do
       get :role_list
+      resource :teacher
     end
   end
 
